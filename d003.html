@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilosD3/estilo.css">
+    <title>Contador</title>
+</head>
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+    <main>
+        <section>
+            <p>
+                <label for="i-inicio" title="Onde a contagem começa">Inicio:</label>
+                <input type="number" name="incio" id="i-inicio">
+            </p>
+            <p>
+                <label for="i-fim" title="Onde a contagem termina">Fim:</label>
+                <input type="number" name="fim" id="i-fim">
+            </p>
+            <p>
+                <label for="i-passo" title="De quanto em quanto a contagem será feita.">Passo:</label>
+                <input type="number" name="passo" id="i-passo">
+            </p>
+            <p><input type="button" value="Calcular" id="botao" onclick="calcular()"></p>
+        </section>
+        <div id="imagem">
+            <img src="imagensD3/einsten2.png" alt="foto de albert einsten">
+        </div>
+        <div id="resposta">
+            <p id="msg1">Aguardando valores...</p>
+            <p id="msg2"></p>
+        </div>
+    </main>
+    <footer><p>@CursoemVideo</p></footer>
+    <script src="jsD3/script.js"></script>
+</body>
+</html>
