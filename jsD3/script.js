@@ -21,7 +21,7 @@ function calcular(){
         window.alert('[ERROR] COMANDO INVALIDO')
         mensagem1.innerHTML = 'INSIRA TODOS OS VALORES CORRETAMENTE'
     }
-    else {
+    else if (inicio < fim ){
         do {
             resposta  += `${inicio} <span>&#128073;</span>`
             inicio += passo  
@@ -29,5 +29,14 @@ function calcular(){
         mensagem1.innerHTML = resposta + `<span>&#127988;</span>` 
         mensagem2.innerHTML = 'fim'
         }
-      }  
+      } 
+    else if (inicio > fim) {
+        do {
+            resposta  += `${inicio} <span>&#128073;</span>`
+            inicio -= passo  
+        } while (inicio >= fim) {
+        mensagem1.innerHTML = resposta + `<span>&#127988;</span>` 
+        mensagem2.innerHTML = 'fim'
+        }
+    }
 } 
